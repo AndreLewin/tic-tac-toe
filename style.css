@@ -1,0 +1,74 @@
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+
+/* CSS reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background */
+body {
+	/* Image from http://subtlepatterns.com */
+    background: url('http://subtlepatterns.com/patterns/school.png');
+    font-family: 'Coming Soon', cursive;
+    text-align: center;
+}
+
+/* Text */
+h1 {
+    color: #636363;
+    font-size: 128px;
+    line-height: 0;
+}
+
+@media (max-width: 700px){
+    h1 {
+        font-size: 18vw;
+    }
+}
+
+/* Main section */
+.main {
+    display: block;
+    border: none;
+    border-radius: .3em;
+    color: #000000;
+    font-size: 3em;
+    outline: none;
+    transition: all .1s ease-in-out;
+}
+
+/* Buttons */
+#buttons {
+    display: inline-block;
+}
+
+.letter-button {
+    box-shadow: 0 0 .1em rgba(0,0,0,.3);
+    border: none;
+    cursor: pointer;
+    border-radius: .5em;
+    color: #000000;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1em;
+    width: 1.75em;
+    transition: all .1s ease-in-out;
+}
+
+.letter-button:active {
+    box-shadow: 0 0 .1em rgba(0,0,0,.5);
+    transform: translate(0px, 2px);
+}
+
+/* Button color */
+.dark-blue {
+    background-color: #46a7d1;
+    border-bottom: 8px solid #2e8fb8;
+    text-shadow: 0px 3px #2197c1;
+}
+.dark-blue:hover {
+    background-color: #44a1c7;
+    border-bottom: 8px solid #258da6;
+    text-shadow: 0px 3px #1c8ca7;
+}
